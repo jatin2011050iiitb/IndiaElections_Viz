@@ -351,7 +351,7 @@ function updateMap(pc_key){
             labels = [],
             from, to;
         // color reference from color brewer
-        var brew = ['#DD9FD5','#E6969D','#BC9D42','#E45521'];
+        var brew = ['#DD9FD5','#E6969D','#CEDA9F','#E45521'];
 
         for (var i = 0; i < grades.length; i++) {
             from = grades[i];
@@ -729,7 +729,7 @@ function updateMap(pc_key){
                 .text(function(d){return (d.p_value.toFixed(2) + "%") ;})
                 .style("color", function(d) { return getLiteracyColor( d.p_value ); });
         
-    //updateInsetMap("UP");
+    updateInsetMap("UP");
     
     
     }// END: updateChart()
